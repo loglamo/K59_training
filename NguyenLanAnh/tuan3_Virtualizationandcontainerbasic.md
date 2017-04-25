@@ -1,23 +1,14 @@
 # virtualization and container basic
 ## 1. virtualization_ sự ảo hóa
 ### - Sự ảo hóa là gì ?
-là tạo ra thêm phiên bản phụ ( phiên bản ảo) của các thành phần trong hệ thống máy tính như: Phần cứng, phần mềm, thiết bị lưu trữ, mạng máy tính,...
+Là tạo ra thêm phiên bản phụ ( phiên bản ảo) của các thành phần trong hệ thống máy tính như: Phần cứng, phần mềm, thiết bị lưu trữ, mạng máy tính,...
 -->chạy nhiều thứ hơn trên 1 máy tính duy nhất.
-### - Phân loại:
+### - 1 số ví dụ về ảo hóa:
 - Hệ điều hành ảo( tạo máy ảo):Có thể tạo nhiều máy ảo trên 1 máy tính duy nhất, bên cạnh đó cũng có thể chạy song song cùng lúc 2 hệ điều hành.
 việc chuyển đổi giữa 2 hệ điều hành này đơn giản như thao tác với 2 cửa sổ trên máy tính.
 Máy thật và máy ảo có thể chia sẻ dữ liệu với nhau.
 Các phần mềm chuyên dụng cho việc tạo hệ điều hành ảo này: VMware, VirtualBox, Virtual PC, VMware Fusion,...
-- Ảo hóa phần cứng (Hyperviser):Hyperviser có thể là phần cứng, phần mềm, hay
-firmware có thể chạy trực tiếp trên 1 hệ thống máy tính, có chức năng cho nhiều máy ảo chạy trên nó.
-Điểm khác biệt giữa Hyperviser và và những phần mềm tạo máy ảo như trên là : Hyperviser không cần hệ điều hành chủ
-, nó có thể chạy trực tiếp trên phần cứng.
-Hình dưới đây sẽ cho thấy rõ điều đó:
-    ![hinh1](http://i.imgur.com/YMBgUKh.png)
 
-  ảo hóa phần cứng có thể chia ra làm 3 loại : ảo hóa toàn phần (Full virtualization),ảo hóa cục bộ(Partial virtualization),và ảo hóa song song(Paravirtualization):
-
-    ![hinh2](http://i.imgur.com/PQpElPM.png)
 
 - Ổ đĩa ảo: Khi máy tính có gắn ổ đĩa quang thì đó là ổ đĩa thật.
 những khi máy tính không có ổ đĩa thật này, mà khi tải 1 số phần mềm, phim có dạng file ảnh
@@ -38,13 +29,12 @@ Các hệ thống máy chủ cũng rất hay dùng RAM ảo. RAM ảo được t
 một máy chủ thực. sẽ giúp tiết kiệm chi phí thuê, mua server đối với những ứng dụng đòi hỏi server không
 cần quá mạnh.
 
-Bên cạnh đó cũng có nhiều cách phân loại ảo hóa khác dựa trên các tiêu chí khác nhau.
+
 
 ### - Các công nghệ ảo hóa:
 
   Có thể kể đến các công nghệ ảo hóa như Hyperviser hay OS level, ...
-- Hyperviser: là 1 phần mềm nằm bên trên phần cứng hoặc bên dưới hệ điều hành
-nhằm cung cấp các môi trường tách biệt gọi là các phân vùng_partition. Mỗi phân vùng ứng với 1 máy ảo với hệ điều hành riêng.
+- Hyperviser:  cung cấp các môi trường tách biệt gọi là các phân vùng_partition. Mỗi phân vùng ứng với 1 máy ảo với hệ điều hành riêng.
 VD: Hyper-V, Xen,...Hyperviser có thể chia làm 2 loại: Native (Bare Metal Hyperviser) và Hosted Hyperviser
 
   ![anhhy](http://i.imgur.com/phbvkWK.png)
