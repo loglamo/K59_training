@@ -4,11 +4,11 @@
 ## Tổng quan, cài đặt Linux
 Có nhiều lí do để nhiều người chọn Linux trở thành hệ điều hành chính trên máy tính của mình, và đặc biệt là những lập trình viên, có thể kể đến những lí do cơ bản sau:
 - Về vấn đề bản quyền, chi phí: Linux thuộc phần mềm mã nguồn mở nên người sử dụng không cần phải lo lắng nhiều về vấn đề bản quyền, đồng thời chi phí cho những phần mềm kiểu này là ít hoặc free.
-- Linux là một hệ điều hành linh hoạt, uyển chuyển, bởi nó là 1 hệ điều hành mã nguồn mở nên bản thân người dùng có thể tùy chỉnh, thay đổi, sửa chữa theo ý mình nếu có đủ khả năng. Tính linh hoạt, uyển chuyển của hệ điều hành còn thể hiện ở chỗ nó tương thích với nhiều môi trường: môi trường máy chủ, desktop, nhúng vào các thiết bị điều khiển,...
-- Linux mang tính an toàn, bảo mật cao: Linux có một cơ cấu phân quyền người sử dụng hết sức chặt chẽ: chỉ có những root mới có quyền can thiệp vào hệ thống để cài đặt và thay đổi. bên cạnh đó Linux cũng có chế độ cho phép một người dùng bình thường có khả năng sử dụng quyền của root trong một khoảng thời gian cho một số hành động. Cơ chế phân quyền như này giúp tránh khỏi những sai sót, đổ vỡ trong hệ thống.
-tính chất mở một lần nữa thể hiện điểm mạnh của mình, khi nó giúp Linux tăng sự an toàn hệ thống. Khi một lỗ hổng bị phát hiện, thì nó sẽ được cả cộng đồng mã nguồn mở tham gia sửa chữa, trong 1 thời gian ngắn, lỗ hổng đó sẽ được fix. bên cạnh đó, vì người quản trị cũng nhìn thấy được từng ngõ ngách của hệ thống nên cũng phần nào đảm bảo được sự an toàn.
-- thích hợp cho việc quản trị mạng: Bởi vì ngay từ đầu được tạo ra cho chế độ đa người dùng, nên Linux được coi là hệ điều hành mạng rất có giá trị: tính bảo mật cao, chạy ổn định.
-- chạy thống nhất trên các hệ thống phần cứng: Mặc dù có rất nhiều phiên bản Linux khác nhau do các nhà phân phối khác nhau ban hành nhưng nhìn chung chúng đều chạy khá ổn định trên các thiết bị phần cứng.
+- Linux là một hệ điều hành linh hoạt, uyển chuyển, bởi nó là 1 hệ điều hành mã nguồn mở nên bản thân người dùng có thể tùy chỉnh, thay đổi, sửa chữa theo ý mình nếu có đủ khả năng. Tính linh hoạt, uyển chuyển của hệ điều hành còn thể hiện ở chỗ nó tương thích với nhiều môi trường: Môi trường máy chủ, desktop, nhúng vào các thiết bị điều khiển,...
+- Linux mang tính an toàn, bảo mật cao: Linux có một cơ cấu phân quyền người sử dụng hết sức chặt chẽ: Chỉ có những root mới có quyền can thiệp vào hệ thống để cài đặt và thay đổi. Bên cạnh đó Linux cũng có chế độ cho phép một người dùng bình thường có khả năng sử dụng quyền của root trong một khoảng thời gian cho một số hành động. Cơ chế phân quyền như này giúp tránh khỏi những sai sót, đổ vỡ trong hệ thống.
+Tính chất mở một lần nữa thể hiện điểm mạnh của mình, khi nó giúp Linux tăng sự an toàn hệ thống, khi một lỗ hổng bị phát hiện, thì nó sẽ được cả cộng đồng mã nguồn mở tham gia sửa chữa, trong 1 thời gian ngắn, lỗ hổng đó sẽ được fix. Bên cạnh đó, vì người quản trị cũng nhìn thấy được từng ngõ ngách của hệ thống nên cũng phần nào đảm bảo được sự an toàn.
+- Thích hợp cho việc quản trị mạng: Bởi vì ngay từ đầu được tạo ra cho chế độ đa người dùng, nên Linux được coi là hệ điều hành mạng rất có giá trị: Tính bảo mật cao, chạy ổn định.
+- Chạy thống nhất trên các hệ thống phần cứng: Mặc dù có rất nhiều phiên bản Linux khác nhau do các nhà phân phối khác nhau ban hành nhưng nhìn chung chúng đều chạy khá ổn định trên các thiết bị phần cứng.
 ## Tiêu chuẩn phân cấp hệ thống file
 Cấu trúc tập tin trong Linux được tổ chức theo một hệ thống phân bậc tương tự cấu trúc của 1 cây phân cấp, với bậc cao nhất là thư mục gốc, kí hiệu "/". Tất cả các tập tin, thư mục đều nằm dưới thư mục gốc.
 Nằm dưới thư mục gốc (/)có một loạt các thư mục quan trọng của hệ thống tập tin:
@@ -20,10 +20,10 @@ trong đó
 - /etc: chứa các tập tin cấu hình hệ thống, đống thời còn chứa các shell script dùng để khởi động hoặc tắt các chương trình khác. VD:/etc/resolv.conf, ...
 - /proc: chứa thông tin về các tiến trình đang chạy dưới dạng 1 hệ thống file thư mục mô phỏng. VD: thư mục con /proc/{pid}chứa các thông tin về tiến trình có id là pid. bên cạnh đó đây cũng là nơi lưu thông tin về các tài nguyên đang được sử dụng của hệ thống.
 - /usr: chương trình của người dùng. chứa các file thư viện,file thực thi, tài liệu hướng dẫn.
-1. /usr/bin: chứa các file thực thi của nguwoif dùng như : at,awk,cc,less,...
-2. /usr/sbin: chứa các file thực thi của hệ thống dưới quyền admin: atd, cron,.
-3. /usr/lib: chứa các thư viện cho các chương trình trong /usr/bin, /usr/sbin
-4. /usr/local: chứa các chương trình của người dùng được cài từ mã nguồn
+  1. /usr/bin: chứa các file thực thi của người dùng như : at,awk,cc,less,...
+  2. /usr/sbin: chứa các file thực thi của hệ thống dưới quyền admin: atd, cron,.
+  3. /usr/lib: chứa các thư viện cho các chương trình trong /usr/bin, /usr/sbin
+  4. /usr/local: chứa các chương trình của người dùng được cài từ mã nguồn
 - /home: thư mục chính lưu trữ các tập tin cá nhân của tất cả user
 - /boot: chứa các tập tin cấu hình cho quá trình khởi động hệ thống.
 - /dev: Các file thiết bị. Các phân vùng ổ cứng, thiết bị ngoai vi như USB, ổ đĩa cắm ngoài, bất kì thiết bị gắn kèm vào hệ thống đều được lưu ở đây.
@@ -111,18 +111,18 @@ hoặc:
         pattern2)câu lệnh;;
         * ) câu lệnh;;
         esac
-## init system
+## init System
 - init process là tiến trình được khởi động đầu tiên trong hệ thống. nhiệm vụ của init là start, stop các process services. Nó là tiến trình được khởi động lên đầu tiên trong hệ thống nên init process luôn có PID(Process ID)là 1
 - có 3 kiểu triển khai init trong hệ thống Linux là:
 
-        system V (cũ)
+        System V (cũ)
         Upstart
         Systemd
-Init Systemd không chỉ dừng lại ở việc start/stop các services nó còn có thể mount filesystems, quản lí network sockets,...quản lí các công việc như thế, Systemd phân chia ra các đơn vị units:
+init Systemd không chỉ dừng lại ở việc start/stop các services nó còn có thể mount filesystems, quản lí network sockets,...quản lí các công việc như thế, Systemd phân chia ra các đơn vị units:
          Service units(.service)để start và stop các unit
          Mount units(.mount) để quản lí các mount point
          Target unit(.target)để điều khiển các runlevels(sử dụng trong sysV init)
-trong khi ở SysV init system có các runlevels:
+trong khi ở SysV init System có các runlevels:
                0 - halt
                1 - single-user
                2 - multi-user
@@ -131,15 +131,15 @@ trong khi ở SysV init system có các runlevels:
                5 - multi-user with display manager(graphical login)
                6 - reboot
 
-Thì Systemd khái niệm runlevels được thấy thế bằng các targets để boot vào như:
+Thì Systemd khái niệm runlevels được thay thế bằng các targets để boot vào như:
      poweroff.target - shutdown system
      rescue.target - single user mode
      multi-user.target - multiuser with networking
      graphical.target - multiuser with networking and GUI
      reboot.target - restart
 
-# GIT
-## cơ bản về git
+# Git
+## cơ bản về Git
 - Git là một phần mềm quản lí mã nguồn phân tán, ban đầu dành cho việc phát triển nhân Linux. Hiện nay, nó trở thành một trong các phần mềm quản lí mã nguồn phổ biến nhất.
 - Các khái niệm cơ bản trong git:
      **repository**:(repo)đây là nơi chứa tất cả thông tin cần thiết để duy trì và quản lí các sửa đổi và quản lí dự án. repo có 2 cấu trúc dữ liệu chính là object store và index. tất cả dữ liệu của repo đều được chứa trong thư mục đang làm việc dưới dạng folder ẩn có tên là .git.
@@ -149,7 +149,7 @@ Thì Systemd khái niệm runlevels được thấy thế bằng các targets đ
      commits: chứa metadata có thông tin về mọi thứ như tên tác giả, người tải lên, ngày tải, thông tin log,...
      tags: đánh dấu
      **index**: file nhị phân động tạm thời miêu tả cấu trúc thư mục của toàn bộ repo và trạng thái của dự án được thể hiện thông qua commits và trees tại 1 thời điểm nào đó trong lịch sử phát triển. index không chứa nội dung file mà chỉ dùng để truy tìm những thứ mà bạn muốn commits
-- Một số website, phần mềm cho phép lưu trữ git:
+- Một số website, phần mềm cho phép lưu trữ Git:
              GitHub
              GitLab
              GNU Savannah
@@ -157,7 +157,7 @@ Thì Systemd khái niệm runlevels được thấy thế bằng các targets đ
 - Cơ chế lưu trữ phiên bản của Git là nó sẽ tạo ra 1 snapshot trên mỗi tập tin và thư mục sau khi commit, từ đó cho phép bạn tái sử dụng lại 1 ảnh chụp nào đó mà có thể hiểu đó như là 1 phiên bản.
 
 ## Cài đặt Git
-- cài đặt git trên Ubuntu
+- cài đặt Git trên Ubuntu
 
 sử dụng lệnh sau để cài đặt Git:
          sudo apt-get install git
