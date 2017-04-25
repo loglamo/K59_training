@@ -1,4 +1,4 @@
-# **report 2: Init Systemd**
+# **report 2: init Systemd**
 ## cách tìm các file cấu hình của 1 service
 - Tìm trong thư mục etc/ nơi chứa các tập tin cấu hình của hệ thống.
 
@@ -16,10 +16,8 @@ lưu trong etc/postgres/9.6/main
 
   - enable/disable service:(tạm thời)
            sudo service postgresql start
-          sudo service postgresql stop 
-                 
+          sudo service postgresql stop
+
 - enable/disable (automatically), qua systemd
            sudo systemctl enable <tên app>.service
            sudo systemctl disable <tên app>.service
-           
-
