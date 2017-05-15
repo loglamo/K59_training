@@ -34,8 +34,8 @@ cần quá mạnh.
 ### - Các công nghệ ảo hóa:
 
   Có thể kể đến các công nghệ ảo hóa như Hyperviser hay OS level, ...
-- Hyperviser:  cung cấp các môi trường tách biệt gọi là các phân vùng_partition. Mỗi phân vùng ứng với 1 máy ảo với hệ điều hành riêng.
-VD: Hyper-V, Xen,...Hyperviser có thể chia làm 2 loại: Native (Bare Metal Hyperviser) và Hosted Hyperviser
+- Hypervisor:  cung cấp các môi trường tách biệt gọi là các phân vùng_partition. Mỗi phân vùng ứng với 1 máy ảo với hệ điều hành riêng.
+VD: Hyper-V, Xen,...Hypervisor có thể chia làm 2 loại: Native (Bare Metal Hypervisor) và Hosted Hypervisor
 
   ![anhhy](http://i.imgur.com/phbvkWK.png)
 
@@ -58,7 +58,7 @@ VD: chroot, Docker,...
 
 Máy ảo là 1 chương trình đóng vai trò như 1 máy vi tính ảo.
 Nó chạy trên hệ điều hành thật(hệ điều hành chủ) cung cấp phần cứng ảo tới hệ điều hành ảo (hệ điều hành khách)
-Hệ điều hành khách hoặt động trên cửa sổ của hệ điều hành chủ như mọi chương trình khác trên máy tính.
+Hệ điều hành khách hoạt động trên cửa sổ của hệ điều hành chủ như mọi chương trình khác trên máy tính.
 Các thiết bị phần cứng ảo được cung cấp bởi máy ảo và ánh xạ đến phần cứng thực trên máy thật.
 ví dụ : ổ đĩa cứng ảo được lưu trong 1 file đặt trong ổ đĩa cứng thật.
 
