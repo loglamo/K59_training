@@ -114,6 +114,38 @@ Trong đó:
 - API server: cung cấp Kubernetes API. Đặt Pod vào node, đồng bộ hóa thông tin của Pod bằng REST API.
 - etcd: lưu trữ liên kết cài đặt với node.
 
+### Kubernetes resources
+#### Compute resources:
+
+Có 2 loại compute resource là CPU và memory.
+Loại tài nguyên này đều có đơn vị cơ sở, như CPU có đơn vị cơ sở là core , memory có đơn vị cơ sơ là byte.
+
+Loại tài nguyên này có thể đo đạt bằng các đơn vị cơ sở như trên, có thể được xác định hay yêu cầu cho phù hợp.
+
+Và mỗi container sẽ có các resoures này. Các resoures này sẽ phải kèm theo 2 yếu tố là request và limit. Request sẽ giúp scheduler xác định node nào mới phú hợp để đặt pod vào. Còn limit giữ vai trò là một giới hạn dừng để chắc chắn các container không đòi hỏi tài nguyên quá lớn. Khi tài nguyên đã tăng lên quá giới hạn container có thể bị dừng.
+
+#### API resources:
+Nguồn tài nguyên chỉ có thể đọc và thay đổi thông qua API Kubernetes server.
+
+Nguồn tài nguyên này sẽ đảm bảo cho các components giao tiếp được với nhau. Và chính loại resource này lại bị quản lí bởi API server.
+
+Gồm:  
+
+              API versioning
+              API group
+Bên cạnh đó còn có Opaque integer resource, xuất hiện tại Kubernetes version 1.5.
+
+
+
+
+
+
+
+
+
+
+
+
 ## 4. IOT platform
 ### IOT platform?
 IOT platform như một middleware, cái sẽ có nhiệm vụ kết nối các phần như phần cứng, điểm thu, data network với các ứng dụng đầu cuối phía người dùng. Cụ thể, nó sẽ quản lí và ảo hóa dữ liệu rồi dữ liệu sau đó mới được trả về thiết bị người dùng.-> Giải quyết các vấn đề: Kết nối thiết bị, trích xuất dữ liệu từ lượng lớn các thiết bị thu nhận dữ liệu.
