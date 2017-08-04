@@ -64,7 +64,7 @@ Embedded DNS server: Cung cấp hoạt động phân giải tên miền giữa c
 
 ## 2. Calico, Flannel, Weave
 
-Có 4 giải pháp khác nhau cho 1 network với nhiều hosts: Calico, Flannel, Weave, Docker Overlay Network.
+Có 4 giải pháp khác nhau cho network: Calico, Flannel, Weave, Docker Overlay Network.
 
 
 ## 3. Kubernetes
@@ -161,7 +161,6 @@ Bên thứ 3 này có thể là phần cứng hay phần mềm nhằm tăng tố
 ### 1 số IOT Platforms
 IOT platform rất đa dạng. Có thể chia ra nhiều loại platform: Nền tảng cho các ngành công nghiệp, nền tảng tập trung vào các thiết bị,...
 Có thể kể đến 1 số platform nổi trội:
-- AWS IoT
 - Microsoft Azure IoT
 - IBM Watson
 - Cisco IoT Cloud Connect
